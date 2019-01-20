@@ -1,0 +1,65 @@
+.gatsby-code-button-container {
+	position: relative;
+	z-index: $z-index;
+	display: flex;
+	justify-content: flex-end;
+	top: $top;
+	pointer-events: none;
+}
+
+.gatsby-code-button {
+	padding: 0 $padding-x;
+	color: $background;
+	background-color: $comment;
+	font-family: $font;
+	font-size: $font-size;
+	line-height: $line-height;
+	cursor: pointer;
+	pointer-events: initial;
+
+	&:after {
+		visibility: hidden;
+		display: none;
+		position: absolute;
+		content: attr(data-tooltip);
+		color: $background;
+		background-color: $purple;
+		font-size: $tooltip-font-size;
+		white-space: nowrap;
+	}
+
+	&[data-tooltip] {
+		&:after {
+			top: 0;
+			right: $right;
+		}
+
+		&:hover:after,
+		&:focus:after {
+			visibility: visible;
+			z-index: 200;
+			display: block;
+			padding: 0 $padding-x;
+			font-weight: $font-weight;
+			animation: fadeIn $duration;
+		}
+	}
+}
+
+.gatsby-code-button-icon {
+	position: relative;
+	top: $icon-top;
+	width: $width;
+	height: $height;
+	fill: $background;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

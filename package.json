@@ -1,0 +1,43 @@
+{
+  "name": "gatsby-code-buttons-dracula",
+  "version": "0.1.1",
+  "description": "Dracula code buttons theme for Gatsby",
+  "main": "styles.css",
+  "scripts": {
+    "sass": "node_modules/node-sass/bin/node-sass lib/styles.scss styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamskok/gatsby-code-buttons-dracula.git"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-remark-prismjs",
+    "prism",
+    "prism-line-numbers",
+    "prism-line-highlight",
+    "theme",
+    "dark-theme",
+    "dracula",
+    "dracula-theme",
+    "gatsby-syntax-hightlight-dracula",
+    "gatsby-line-hightlight-dracula",
+    "gatsby-line-numbers-dracula",
+    "gatsby-code-title-dracula",
+    "styles",
+    "sass",
+    "scss",
+    "css"
+  ],
+  "author": "Vladimir Skok <skok@vova.io> (https://github.com/iamskok)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamskok/gatsby-code-buttons-dracula/issues"
+  },
+  "homepage": "https://github.com/iamskok/gatsby-code-buttons-dracula#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
